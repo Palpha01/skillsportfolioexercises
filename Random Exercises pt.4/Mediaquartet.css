@@ -1,0 +1,46 @@
+body {
+    background-color: purple;
+    color: black;
+    font-size: 100px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: mediumpurple;
+        color: white;
+        font-size: 50px;
+    }
+
+    .row {
+        display: table;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: pink;
+        color: white;
+        font-size: 25px;
+    }
+
+    .row {
+        display: table;
+        float: left;
+    }
+}
+
+.column1 {
+    background-color: mediumpurple;
+    color: lightblue;
+}
+
+.column2 {
+    background-color: lightblue;
+    color: mediumpurple;
+}
